@@ -3,7 +3,7 @@ provider "aws" {
     region = "ap-southeast-2"
 }
 resource "aws_ecr_repository" "ecr_repo" {
-    name = "image-terraform" 
+    name = "img-terraform" 
     image_tag_mutability = "MUTABLE"
     image_scanning_configuration {
         scan_on_push = true 
